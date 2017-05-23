@@ -1,3 +1,6 @@
+> This is based on official example https://github.com/kubernetes/kubernetes/tree/master/staging/src/k8s.io/client-go/examples/in-cluster  but i'm listing down the steps here to make it easy for beginners.
+
+
 ## k8s / openshift  simple custom  controller
 ```sh
 cd $GOPATH
