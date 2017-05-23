@@ -21,7 +21,7 @@ oc new-app docker.io/yournamespace/custom-controller
 ### Running in kubernetes
 ```sh
 kubectl create namespace t2
-kubectl run --image=docker.io/debianmaster/custom-controller custom-controller
+kubectl run --image=docker.io/yournamespace/custom-controller custom-controller
 ```
 >  look at controller log
 
