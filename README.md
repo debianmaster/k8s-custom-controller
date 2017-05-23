@@ -9,9 +9,11 @@ mkdir -p bin/linux
 GOOS=linux GOARCH=amd64 go build -o bin/linux/custon-controller .
 docker build -t "yournamespace/custom-controller" .
 docker push yournamespace/custom-controller
-oc adm policy add-cluster-role-to-user cluster-admin system:serviceaccounts:t1
+oc new-project test1
+oc adm policy add-cluster-role-to-user cluster-admin system:serviceaccounts:test1
 oc new-app docker.io/yournamespace/custom-controller
 ```
+>  look at controller log
 
 
 
