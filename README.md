@@ -9,7 +9,7 @@ cd k8s-custom-controller
 go get k8s.io/client-go/kubernetes
 go get k8s.io/apimachinery/pkg/apis/meta/v1
 mkdir -p bin/linux
-GOOS=linux GOARCH=amd64 go build -o bin/linux/custon-controller .
+GOOS=linux GOARCH=amd64 go build -o bin/linux/custom-controller .
 docker build -t "yournamespace/custom-controller" .
 docker push yournamespace/custom-controller
 ```
